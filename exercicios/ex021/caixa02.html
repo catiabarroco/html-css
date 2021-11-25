@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+            
+        }
+
+        h1 {
+            color: rgb(38, 136, 126);
+        }
+        h2 {
+            color: rgb(50, 175, 163);
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.568);
+            
+        }
+
+        nav {
+            background-color: rgb(122, 122, 122);
+            padding: 3px;
+            /* horizontal vertical espalhamento alcance cor*/
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.39);
+            
+            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: turquoise;
+            
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.39);
+        }
+
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(136, 135, 135);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 4px;
+        }
+
+        div#bola {
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            border-radius: 50%;
+        }
+
+        div#bola > p {
+            display: none;
+            margin: 10px auto;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        div#bola:hover {
+            background-color: turquoise;
+        }
+        div#bola:hover > p {
+            display: block;
+            color: rgb(15, 53, 49);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Desporto Politica Tecnologia</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre Lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est sunt officiis provident cumque sequi inventore ducimus atque accusamus, reiciendis, incidunt minima voluptate! Beatae ducimus laborum rerum placeat animi dolorem?</p>
+                <aside>
+                    <p>Artido escrito por José da Silva</p>
+                </aside>
+
+            </article>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoEmVideo</p>
+    </footer>
+    <div id=bola>
+        <p>Exemplo circulo</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: violet;
+            color: #2e2c2c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>tente abrir este site em varios dispositivos diferentes ou aumente e diminua a tela</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem Flexivel">
+    </picture>
+
+    <h1>Reproduçao de audio</h1>
+    <p>vamos aprender a reproduzir audio</p>
+    <audio preload="auto" autoplay controls loop>
+        <source src="media/In the Sweet By and By - Zachariah Hickman.mp3" type="audio/mpeg">
+        <source src="media/In the Sweet By and By - Zachariah Hickman.ogg" type="audio/ogg">
+        <source src="media/In the Sweet By and By - Zachariah Hickman.wav" type="audio/wav">
+        <p>infelizmente seu navegador nao consegue reproduzir audio. <a href="media/In the Sweet By and By - Zachariah Hickman.mp3">Clique aqui para baixar arquivo</a></p>
+    </audio>
+
+</body>
+</html>
